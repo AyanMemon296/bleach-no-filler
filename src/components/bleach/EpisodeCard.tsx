@@ -11,7 +11,11 @@ type Props = {
 export function EpisodeCard({ entry, checked, onToggle }: Props) {
   const isCanon = entry.kind === "canon";
   const badgeLabel =
-    entry.kind === "canon" ? "WATCH — CANON" : entry.kind === "recap" ? "SKIP — RECAP" : "SKIP — FILLER";
+    entry.kind === "canon"
+      ? "WATCH — CANON"
+      : entry.kind === "recap"
+        ? "SKIP — RECAP"
+        : "SKIP — FILLER";
 
   return (
     <button
